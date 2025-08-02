@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAnh1lcKWwukXefy5P0BSLntoYWoxzBajE";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 export async function getGeminiResponse(prompt) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
